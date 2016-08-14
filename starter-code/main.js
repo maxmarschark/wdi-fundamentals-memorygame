@@ -22,3 +22,18 @@ function createBoard() {
   }
 
 }
+
+function isTwoCards() {
+  cardsInPlay.push(this.getAttribute('data-card'));
+	console.log(this.getAttribute('data-card'));
+	if (this.getAttribute('data-card') === 'king') {
+		this.innerHTML = "<img src='http://i.imgur.com/bnuv5Im.png'>"; // king
+	} else {
+		this.innerHTML = "<img src='http://i.imgur.com/v6buNt2.png'>"; //queen
+	}
+  
+  if (cardsInPlay.length === 2) {
+    isMatch(cardsInPlay);
+    cardsInPlay = [];
+	}
+}
