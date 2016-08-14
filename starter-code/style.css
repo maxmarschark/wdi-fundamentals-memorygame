@@ -60,6 +60,12 @@ a:hover {
         font-size: 0;
       }
 
+img {
+	height: 200px;
+  width: 150px;
+}
+
+
 footer {
 	background-color: #808080;
 	text-align: center;
