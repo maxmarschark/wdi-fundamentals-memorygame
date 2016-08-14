@@ -37,3 +37,14 @@ function isTwoCards() {
     cardsInPlay = [];
 	}
 }
+
+function isMatch(cards) {
+  if (cards[0] === cards[1]) {
+    alert("You found a match!");
+  } else {
+    alert("Sorry, try again.");
+
+  }
+}
+
+createBoard();
